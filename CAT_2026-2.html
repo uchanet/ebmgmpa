@@ -711,7 +711,7 @@ function probeStorage(){
    회차는 표지의 「CAT 회차」 메뉴로 고른다(2026-11-04, 종전에는 회차별 배포본 파일이 정했다).
    회차마다 저장 슬롯이 따로 있어, 회차를 바꾸면 지금 작업을 저장하고 그 회차의 작업을 연다.
    처음 열 때는 마지막으로 쓴 회차, 그것도 없으면 CAT1로 연다. */
-const DEFAULT_ROUND = "CAT1";
+const DEFAULT_ROUND = "CAT2";
 const LSKEY_LAST = LSKEY("last");
 function lastRound(){
   try{ const r = localStorage.getItem(LSKEY_LAST); return ROUND_INFO[r] ? r : null; }catch(e){ return null; }
